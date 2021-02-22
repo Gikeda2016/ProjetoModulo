@@ -27,7 +27,9 @@ def aumentar(n, porc, moeda=False):
     return fnumero(n*(1+porc/100), moeda)
 
 def diminuir(n, porc, moeda=False):
-    ''' diminui n porc(%) '''
+    ''' aumenta n porc(%) 
+        :moeda True- devolve no formato R$ 100,00    
+    '''
     return fnumero(n*(1-porc/100), moeda)
 
 def fmoeda(n):
@@ -37,18 +39,5 @@ def fmoeda(n):
 def fnumero(n, moeda=False):
     ''' Converte número no formato 100,00 ou R$ 100.00 '''
     num = f'{n:>7.2f}'.replace('.',',')
-    if moeda:
-        num = 'R$ ' + num
-    return num
+    return num if not moeda else 'R$ ' + num
 
-def resumo(preco, aumento, reducao):
-    ''' apresenta resumo '''
-    print('-'*40)
-    print('{0:^40}'.format('RESUMO DO VALOR'))
-    print('-'*40)
-    print(' {0:22} {1}'.format(' Preço analisado:', fmoeda(preco)))
-    print(' {0:22} {1}'.format(' Dobro do preço:', dobro(preco, True)))
-    print(' {0:22} {1}'.format(' Metade do preço:', metade(preco, True)))
-    print('{0:<5} {1:15} {2}'.format(fnumero(aumento), '% de aumento:', aumentar(preco, aumento, True)))
-    print('{0:<5} {1:15} {2}'.format(fnumero(reducao), '% de redução:', diminuir(preco, reducao, True)))
-    print(f'-'*40)

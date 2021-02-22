@@ -45,10 +45,10 @@ def moeda108():
     aumento = float(input('  Quanto foi aumento de preço(%) : '))
     reducao = float(input('  Quanto vai ser reduzido(%)     : '))
     print('-'*40)
-    print(f'  A metade de {calc.fmoeda(preco)} é R$ {calc.metade(preco)}.')
-    print(f'  O dobro  de {calc.fmoeda(preco)} temos R$ {calc.dobro(preco)}.')
-    print(f'  Aumentando  {calc.fnumero(aumento)}%, temos R$ {calc.aumentar(preco, aumento)}.')
-    print(f'  Diminuindo  {calc.fnumero(reducao)}%, temos R$ {calc.diminuir(preco, reducao)}.')
+    print(f'  A metade de {calc.fmoeda(preco)} é R${calc.metade(preco)}.')
+    print(f'  O dobro  de {calc.fmoeda(preco)} temos R${calc.dobro(preco)}.')
+    print(f'  Aumentando  {calc.fnumero(aumento)}%, temos R${calc.aumentar(preco, aumento)}.')
+    print(f'  Diminuindo  {calc.fnumero(reducao)}%, temos R${calc.diminuir(preco, reducao)}.')
     print('-'*40)
     mens.print_end()
 
@@ -105,7 +105,7 @@ def main():
         print('  (2): Exercício 108')
         print('  (3): Exercício 109')
         print('  (4): Exercício 110')
-        print('  (5): Exercício 111')
+        print('  (5): Exercício 111/112')
         print('-'*40)
         num = str(input('  Escolha um opção: [99-sair] '))
         if num.isnumeric(): 
@@ -119,7 +119,7 @@ def main():
             elif num1 == 4:
                 moeda110()
             elif num1 == 5:
-                moeda111()
+                moeda111()   ## mesmo de 112
             elif num1 == 99:
                 break
             else:
