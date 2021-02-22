@@ -8,7 +8,7 @@
  Este repositório foi criado para usar o Git e o GitHub e 
  aprender sobre esta ferramenta formidável.
  
- Recado para os alunos do cursoemvideo - curso Phyton
+ Recado para os alunos do cursoemvideo: curso Phyton
  Podem usar este repositorio para auxilio das aulas,
  tirar dúvidas ou dar sugestões. Não esquecam criem 
  os seus também e tonemos excelentes desenvolvedores.
