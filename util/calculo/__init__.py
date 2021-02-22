@@ -9,6 +9,11 @@ def fatorial(n):
     return fat
 
 def dobro(n, moeda=False):
+    ''' moeda é opcional - False por defaul - não imprime R$, 
+    mas converte para string no formato 100,00. 
+    Essa modificação foi feita demais funções para adequar ao exercícios
+    Todas funções retornam dados formatados por fnumero()
+    '''  
     return fnumero(n*2, moeda)
 
 def triplo(n, moeda=False):
@@ -37,7 +42,7 @@ def fnumero(n, moeda=False):
     return num
 
 def resumo(preco, aumento, reducao):
-    ''' apresenta de resumo '''
+    ''' apresenta resumo '''
     print('-'*40)
     print('{0:^40}'.format('RESUMO DO VALOR'))
     print('-'*40)
