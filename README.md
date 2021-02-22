@@ -10,5 +10,5 @@
  
  Recado para os alunos do cursoemvideo: curso Phyton
  Podem usar este repositorio para auxilio das aulas,
- tirar dúvidas ou dar sugestões. Não esquecam criem 
- os seus também e tonemos excelentes desenvolvedores.
+ tirar dúvidas ou dar sugestões. Não deixem de criar 
+ os seus também, ok.
