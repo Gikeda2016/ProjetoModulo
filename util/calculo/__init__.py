@@ -9,9 +9,9 @@ def fatorial(n):
     return fat
 
 def dobro(n, moeda=False):
-    ''' moeda é opcional - False por defaul - não imprime R$, 
+    ''' moeda é opcional - False por default - não imprime 'R$', 
     mas converte para string no formato 100,00. 
-    Essa modificação foi feita demais funções para adequar ao exercícios
+    Essa modificação foi feita demais funções para adequar aos exercícios
     Todas funções retornam dados formatados por fnumero()
     '''  
     return fnumero(n*2, moeda)
