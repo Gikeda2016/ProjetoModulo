@@ -18,11 +18,11 @@ def metade(n, moeda=False):
     return fnumero(n/2, moeda)
 
 def aumentar(n, porc, moeda=False):
-    ''' aumenta n em porc(%) '''
+    ''' aumenta n porc(%) '''
     return fnumero(n*(1+porc/100), moeda)
 
 def diminuir(n, porc, moeda=False):
-    ''' diminui n em porc(%) '''
+    ''' diminui n porc(%) '''
     return fnumero(n*(1-porc/100), moeda)
 
 def fmoeda(n):
@@ -30,7 +30,7 @@ def fmoeda(n):
     return f'R$ {n:>7.2f}'.replace('.',',')
 
 def fnumero(n, moeda=False):
-    ''' Converte número no formato 100,00 ou R$ 100,00 '''
+    ''' Converte número no formato 100,00 ou R$ 100.00 '''
     num = f'{n:>7.2f}'.replace('.',',')
     if moeda:
         num = 'R$ ' + num
