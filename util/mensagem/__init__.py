@@ -57,14 +57,13 @@ def leianumero(mens):
     ''' Consiste entrada númerica'''
     while True:
         try:
-            valor = str(input(mens))
+            valor = str(input(mens)).replace(',','.').strip()  ## tira branco, troca',' por '.'
             flvalor = float(valor)
         except ValueError:
-            if valor.replace(',','').isdecimal():  ## retira virgula e verifica se é numero
-                valor = valor.replace(',','.')  ## corrige o problema de vírgula por ponto
+            if valor.isdecimal():  ## retira virgula e verifica se é numero
                 break
             else:
-                print(f' {red_bold} Por favor digite um valor válido!!{default_}')
+                print(f' {red_bold} ERRO: digite um valor válido!!{default_}')
             print()
             continue
         break
