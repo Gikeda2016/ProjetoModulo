@@ -1,7 +1,19 @@
 from util import calculo as calc
 
 def resumo(preco, aumento, reducao):
-    ''' apresenta de resumo '''
+    ''' apresenta  resumo
+        : preco - valor do produto
+        : aumento - % de aumento do produto
+        : redução - % de redução do produto
+        usa funçoes:
+        :fmoeda - converte em formato "R$ 100,00"
+        :dobro, metade, aumentar e diminuir - calculos matemáticos
+        :   True - indica que retorna valor em formato "R$ 100,00"
+        :   False - simplesmente número "100,00"
+        :fnumero - converte no formato "100,00" por default,
+        :   True - retorna no formato "R$100,00"
+        :\t - formatação tipo tabulação
+    '''
     print('-'*40)
     print('{0:^40}'.format('RESUMO DO VALOR'))
     print('-'*40)
